@@ -1,0 +1,90 @@
+body{
+    background-color: #4b3636;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+p{
+    font-size: 1.6rem;
+}
+h1{
+    font-size: 6rem;
+}
+
+.app{
+    width: 100%;
+    min-height: 100vh;
+    background: url(assets/cloudy.jpg) no-repeat center center/cover;
+    position: relative;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+}
+/* .app::before{
+    content: '';
+    width: 100%;
+    background-color: rgba(1,1,1,0.8);
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+} */
+.container{
+    max-width: 700px;
+    height: 700px;
+    margin: auto;
+    padding: 0 1rem;
+    position: relative;
+    top: 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.app .top{
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.app .description{
+    position: relative;
+    right: -90%;
+    transform-origin: 0 0;
+    transform: rotate(269deg);
+}
+
+.app .bottom{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,0.2);
+}
+.bold{
+    font-weight: 700;
+}
+
+.app .searchBox{
+    text-align: center;
+    padding: 1rem;
+}
+
+.app input{
+    padding: 0.7rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    color: white;
+    border: 1px solid rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.1);
+}
+
+::placeholder{
+    color: #f8f8f8;
+}
